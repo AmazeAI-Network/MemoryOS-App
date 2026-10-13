@@ -31,9 +31,6 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.rounded.Mic
-import androidx.compose.material.icons.rounded.Stop
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -237,7 +234,7 @@ fun VoiceMemoryDialog(
           contentAlignment = Alignment.Center
         ) {
           Icon(
-            imageVector = if (isListening) Icons.Rounded.Stop else Icons.Rounded.Mic,
+            imageVector = if (isListening) IconlyIcons.Stop else IconlyIcons.Mic,
             contentDescription = if (isListening) "Stop Recording" else "Start Recording",
             tint = PureWhite,
             modifier = Modifier.size(36.dp)

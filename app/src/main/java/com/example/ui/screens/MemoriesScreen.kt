@@ -2,9 +2,6 @@ package com.example.ui.screens
 
 import androidx.activity.compose.BackHandler
 import androidx.compose.animation.AnimatedVisibility
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.rounded.ArrowDownward
-import androidx.compose.material.icons.rounded.ArrowUpward
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
@@ -270,7 +267,7 @@ fun MemoriesScreen(
             ) {
               Row(verticalAlignment = Alignment.CenterVertically) {
                 Icon(
-                  imageVector = if (sortDateAscending) Icons.Rounded.ArrowUpward else Icons.Rounded.ArrowDownward,
+                  imageVector = if (sortDateAscending) IconlyIcons.ArrowUpward else IconlyIcons.ArrowDownward,
                   contentDescription = "Toggle Date Sort",
                   tint = MidnightNavy,
                   modifier = Modifier.size(14.dp)
